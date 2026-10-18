@@ -1,6 +1,6 @@
 # Public Service Request System (PSRS)
 
-An **academic demonstration project** inspired by the usability patterns of modern public-service portals. Citizens report public service problems (broken streetlights, water issues, garbage collection…), track progress, and receive in-app updates; administrators triage, assign, resolve, and analyse requests. **It is not an official government service** and must not be given sensitive real-world data (see the in-app Privacy notice).
+**Muranga Exam project** inspired by the usability patterns of modern public-service portals. Citizens report public service problems (broken streetlights, water issues, garbage collection…), track progress, and receive in-app updates; administrators triage, assign, resolve, and analyse requests. **It is not an official government service** and must not be given sensitive real-world data (see the in-app Privacy notice).
 
 ## 1. Problem statement
 Citizens often have no single place to report local service failures or see whether anyone responded. Administrators lack a consistent record of what was reported, who handled it and how long it took.
