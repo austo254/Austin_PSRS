@@ -15,7 +15,7 @@ export function AuthLayout({ children }: { children: ReactNode }) {
           <div className="mt-8">{children}</div>
         </main>
         <footer className="text-xs text-muted">
-          <p>Academic demonstration project. Not an official government service; please do not enter sensitive real-world data.</p>
+          <p>Muranga ICT Intern demonstration project. Not an official government service; please do not enter sensitive real-world data.</p>
           <p className="mt-1"><Link className="underline hover:text-navy" to="/privacy">Privacy notice</Link> · © {new Date().getFullYear()} PSRS</p>
         </footer>
       </div>
