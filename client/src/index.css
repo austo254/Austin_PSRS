@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Design tokens - single source for the PSRS visual identity */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --color-brand: #16a34a;
+  --color-brand-dark: #15803d;
+  --color-brand-soft: #e8f6ee;
+  --color-navy: #11164a;
+  --color-page: #f3f6f5;
+  --color-muted: #64748b;
+  --color-line: #dce3e8;
+  --color-pending: #b45309;
+  --color-pending-soft: #fef3c7;
+  --color-progress: #1d4ed8;
+  --color-progress-soft: #dbeafe;
+  --color-resolved: #15803d;
+  --color-resolved-soft: #dcfce7;
+  --color-rejected: #b4414a;
+  --color-rejected-soft: #fde8ea;
+  --radius-card: 0.75rem;
+  --shadow-card: 0 1px 2px rgb(17 22 74 / 0.05);
+}
+
+html { font-family: var(--font-sans); color: #0f172a; }
+body { background: var(--color-page); min-height: 100vh; }
+
+/* Visible keyboard focus everywhere */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-brand); outline-offset: 2px; border-radius: 6px;
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+.skeleton { background: linear-gradient(90deg, #e5ebef 25%, #f1f5f7 50%, #e5ebef 75%); background-size: 200% 100%; animation: shimmer 1.4s infinite; border-radius: 6px; }
+@keyframes shimmer { to { background-position: -200% 0; } }

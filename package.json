@@ -1,0 +1,16 @@
+{
+  "name": "public-service-request-system",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PSRS - academic public service request portal (React + Express + PostgreSQL)",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "install:all": "npm --prefix server ci && npm --prefix client ci",
+    "build": "npm --prefix client run build && npm --prefix server run build",
+    "start": "npm --prefix server run start:prod",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix client run typecheck",
+    "test": "npm --prefix server test && npm --prefix client test"
+  }
+}
