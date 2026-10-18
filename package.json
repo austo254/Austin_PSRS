@@ -6,7 +6,7 @@
   "engines": { "node": ">=20" },
   "scripts": {
     "install:all": "npm --prefix server ci && npm --prefix client ci",
-    "build": "npm --prefix client run build && npm --prefix server run build",
+    "build": "npm run install:all && npm --prefix client run build && npm --prefix server run build",
     "start": "npm --prefix server run start:prod",
     "dev:server": "npm --prefix server run dev",
     "dev:client": "npm --prefix client run dev",
